@@ -3,6 +3,10 @@ import useMedia from "use-media";
 import { userData } from "@/utils/userData";
 
 import {
+  UserImage
+} from "../../pages/home/style";
+
+import {
   Navbar as NavbarWrapper,
   LogoTipo,
   LogoTipoText,
@@ -37,6 +41,13 @@ export const NavBar = (): JSX.Element => {
       <Container>
         <NavbarMobileArea>
           <LogoTipo>
+          <UserImage
+                src={`https://github.com/${userData.githubUser}.png`}
+                alt={userData.nameUser}
+                title={userData.nameUser}
+                width={"48px"}
+                height={"48px"}
+              />
             <LogoTipoText>{userData.nameUser}</LogoTipoText>
           </LogoTipo>
           {isWide && (

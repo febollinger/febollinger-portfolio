@@ -19,7 +19,6 @@ import {
   Header,
   HeaderContent,
   HeaderButtonsArea,
-  UserImage,
   StackCards,
   ProjectsArea,
   ProjectsAreaSocialMediaMessage,
@@ -28,8 +27,13 @@ import {
 } from "./style";
 
 export const Home = (): JSX.Element => {
+
   const gihubUrl = `https://github.com/${userData.githubUser}`;
-  const portfolioUrl = `https://github.com/${userData.githubUser}/my-portfolio`;
+
+  const downloadUrl = "https://drive.google.com/u/0/uc?id=1wK9UgtPzByEp05ZmYO3FFjWYWb8akYt6&export=download"
+
+
+
 
   return (
     <main id="home">
@@ -37,36 +41,26 @@ export const Home = (): JSX.Element => {
         <Container>
           <HeaderContent>
             <Flex>
-              <UserImage
-                src={`https://github.com/${userData.githubUser}.png`}
-                alt={userData.nameUser}
-                title={userData.nameUser}
-                width={"48px"}
-                height={"48px"}
-              />
-              <Text color="grey4">Hello, my name is {userData.nameUser}</Text>
+              <Text type="name" color="grey4">Hi, my name is {userData.nameUser}</Text>
             </Flex>
-            <Text as="h1" type="heading1" color="grey5">
-            I{" "}
-              <Text as="span" type="heading1" color="brand1">
-                love
-              </Text>{" "}
-              creating and{" "}
-              <Text as="span" type="heading1" color="brand1">
-                developing
-              </Text>{" "}
-              projects
-            </Text>
             <Text type="body1" color="grey2">
-              Discover here in this environment, created especially for you, all
-              my projects and technologies
+              I'm a Full Stack developer Jr. living in São Lourenço - MG. I make web applications.
+            </Text>
+            <Text as="h1" type="heading1" color="grey5">
+              Innovation is my{" "}
+              <Text as="span" type="heading1" color="brand1">
+                passion
+              </Text>{" "}
             </Text>
             <HeaderButtonsArea>
               <Button as="a" type="primary" href="#projects">
                 See Projects
               </Button>
-              <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
+              {/* <Link to="/files/curriculum-dev-fullstack.pdf" target="_blank" download="Curriculum-Fernanda-Bollinger">
+                Download CV
+              </Link> */}
+              <Button as="a" type="outline" target="_blank" href={downloadUrl}>
+                Download CV
               </Button>
               <Button
                 color="grey5"
