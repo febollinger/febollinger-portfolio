@@ -4,7 +4,7 @@ import { Button } from "@/styles/Buttons";
 import { css } from "@stitches/react";
 
 import meIlustration from "@/public/static/img/background/me-ilustration.svg";
-import backgroundImg from "@/public/static/img/background/header-bg.svg";
+import backgroundImg from "@/public/static/img/background/bg-animated.svg";
 
 import dots from "@/public/static/img/background/dots.svg";
 
@@ -26,6 +26,7 @@ export const Header = styled("header", {
   "@mobileLittle": {
     padding: "9rem 0 0 0",
   },
+  
 });
 
 export const HeaderContent = styled("div", {
@@ -145,3 +146,5 @@ export const ProjectAreaWrapperColumns = styled("div", {
     flexDirection: "column",
   },
 });
+
+
