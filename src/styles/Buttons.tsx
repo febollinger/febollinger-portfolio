@@ -31,8 +31,8 @@ export const Button = styled("button", {
         borderColor: "$brand1",
         color: "$whiteFixed",
         "&:hover": {
-          backgroundColor: "$brand2",
-          borderColor: "$brand2",
+          backgroundColor: "$brand3",
+          borderColor: "$brand3",
         },
         "@mobile": {
           height: "2.5rem",

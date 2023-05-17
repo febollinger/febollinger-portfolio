@@ -15,9 +15,19 @@ export const Text = styled("p", {
     fontWeight: 400,
     variants: {
         type: {
-            heading1: {
+            name:{
                 fontSize: "$title1",
                 lineHeight: "$title1",
+                display:"flex",
+                justifyContent: "center",
+                "@mobile": {
+                    fontSize: "$title0Mobile",
+                    lineHeight: "$title1Mobile"
+                }
+            },
+            heading1: {
+                fontSize: "$title2",
+                lineHeight: "$title2",
                 fontWeight: 700,
                 ...headingsDefaultConfig,
                 "@mobile": {

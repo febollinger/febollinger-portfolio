@@ -30,12 +30,13 @@ export const Header = styled("header", {
 
 export const HeaderContent = styled("div", {
   maxWidth: "100%",
-  width: "36rem",
+  width: "100%",
   display: "flex",
   flexDirection: "column",
+  alignItems: "center",
   gap: "$2",
   "@tablet": {
-    width: "36rem",
+    width: "100%",
   },
   "@mobile": {
     width: "100%",

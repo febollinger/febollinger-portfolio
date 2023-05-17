@@ -31,11 +31,11 @@ export const Contacts = () => {
           <motion.div style={{ scale }}>
             <ContactSectionText>
               <Text type="heading2" color="grey4">
-                Let's talk and{" "}
+                Don't be a stranger,{" "}
                 <Text as="span" type="heading2" color="brand1">
-                  develop solutions for your company
+                  connect with me
                 </Text>
-                , together!
+                 {" "}!
               </Text>
             </ContactSectionText>
           </motion.div>
